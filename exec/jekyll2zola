@@ -1,0 +1,7 @@
+require "jekyll2zola"
+
+opt = Jekyll2Zola::OptionParser.new.parse!(ARGV)
+
+options = opt.options
+
+Jekyll2Zola::Converter.new(**options).convert!
